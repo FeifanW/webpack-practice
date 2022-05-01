@@ -1,0 +1,24 @@
+{
+  "name": "webpack-practice",
+  "version": "1.0.0",
+  "description": "webpack练习项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeifanW/webpack-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FeifanW/webpack-practice/issues"
+  },
+  "homepage": "https://github.com/FeifanW/webpack-practice#readme",
+  "dependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
