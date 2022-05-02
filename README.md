@@ -1,7 +1,5 @@
-# webpack-practice
-webpack练习项目
-
-> #### 基础内容
+# webpack学习
+> #### 一、基础内容
 
 在webpack.config.js里面可以自定义webpack配置文件
 
@@ -24,9 +22,9 @@ webpack dev server 会自动检测变化，重新刷新浏览器
  }
 ```
 
-> #### 一、资源模块
+> #### 二、资源模块
 
-- ##### Resources资源   需要配置
+- ##### resources资源   需要配置
 
 ```js
   module:{
@@ -63,6 +61,35 @@ webpack dev server 会自动检测变化，重新刷新浏览器
     ]
   }
 ```
+
+- ##### inline类型
+
+  打包之后看不到，打开网页可以看到，导出一个资源的data-url
+  
+  ```js
+    module:{
+      rules:[
+        {
+          test:/.\svg$/,
+          type:'asset/inline'
+        }
+      ]
+    }
+  ```
+
+- ##### source资源
+
+  导出资源的源代码
+
+  
+
+
+
+
+
+
+
+
 
 
 

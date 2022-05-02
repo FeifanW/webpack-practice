@@ -28,7 +28,11 @@ module.exports = {
         generator: {
           filename:'images/test.png'
         }
-      }
+      },
+      {
+        test:/\.svg$/,
+        type:'asset/inline'
+      },
     ]
   }
 }
