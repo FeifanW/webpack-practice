@@ -6,6 +6,7 @@ module.exports = {
     filename:'bundle.js',
     path:path.resolve(__dirname,'./dist'),
     clean: true,    // 输出的时候自动清理dist文件夹目录   
+    assetModuleFilename:'images/[contenthash][ext]'
   },
   mode:'development',   // 不配置会报错
   devtool:'inline-source-map',       // 显示代码对应的位置
@@ -18,6 +19,16 @@ module.exports = {
   ],
   devServer:{
     static:'./dist'
+  },
+  module:{
+    rules:[
+      {
+        test:/\.png$/,
+        type:'asset/resource',
+        generator: {
+          filename:'images/test.png'
+        }
+      }
+    ]
   }
-
 }
