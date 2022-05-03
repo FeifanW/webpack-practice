@@ -143,13 +143,42 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 
   npm i mini-css-extract-plugin@2.4.2 -D 这个插件基于webpack5 构建
 
+  npm install css-minimizer-webpack-plugin -D 这个插件用于压缩生成的css文件，使用的时候需要把mode改为production
+
+```js
+  const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+  const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+  mode:'production',   // 不配置会报错
+  plugins: [
+    new HtmlWebpackPlugin({
+      template:'./index.html',     // 基于这个模板生成的
+      filename:'app.html',      // 输出的文件
+      inject:'body'          // script标签放在body里面
+    }),
+    new MiniCssExtractPlugin({
+      filename:'styles/[contenthash].css'
+    })
+  ],
+  module:{
+    rules:[
+      {
+        test:/\.(css|less)$/,
+        use:[MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
+        // use:['style-loader', 'css-loader', 'less-loader']
+      }
+    ]
+  },
+  optimization: {
+    minimizer: [
+      new CssMinimizerPlugin()     // 压缩打包之后的css
+    ]
+  }
+
+```
+
+- ##### 在CSS里加载资源
+
   
-
-  npm install css-minimizer-webpack-plugin -D 这个插件用于压缩生成的css文件
-
-  
-
-
 
 
 

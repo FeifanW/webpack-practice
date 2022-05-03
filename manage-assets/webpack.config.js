@@ -11,8 +11,8 @@ module.exports = {
     clean: true,    // 输出的时候自动清理dist文件夹目录   
     assetModuleFilename:'images/[contenthash][ext]'
   },
-  // mode:'development',   // 不配置会报错
-  mode:'production',   // 不配置会报错
+  mode:'development',   // 不配置会报错
+  // mode:'production',   // 不配置会报错
   devtool:'inline-source-map',       // 显示代码对应的位置
   plugins: [
     new HtmlWebpackPlugin({
