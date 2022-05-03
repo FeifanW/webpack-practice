@@ -118,6 +118,8 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 
 > #### 三、loader
 
+- ##### 	加载css
+
 ​	webpack只能直接解析JS和JSON的文件，如果想要解析其他格式的文件需要用到loader
 
 ​	npm i css-loader -D  安装css-loader
@@ -137,7 +139,15 @@ webpack dev server 会自动检测变化，重新刷新浏览器
   }
 ```
 
+- ##### 抽离和压缩css
 
+  npm i mini-css-extract-plugin@2.4.2 -D 这个插件基于webpack5 构建
+
+  
+
+  npm install css-minimizer-webpack-plugin -D 这个插件用于压缩生成的css文件
+
+  
 
 
 
