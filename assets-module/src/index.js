@@ -2,6 +2,7 @@ import helloWorld from './hello-word'
 import imgsrc from './assets/abc.png'
 import logoSvg from './assets/logo.svg'
 import exampleTxt from './assets/example.txt'
+import jpgMap from './assets/zhihu.jpg'
 
 
 helloWorld()
@@ -19,3 +20,8 @@ const block = document.createElement('div')
 block.style.cssText = 'width: 200px; height: 200px; background: aliceblue'
 block.textContent = exampleTxt
 document.body.appendChild(block)
+
+const img3 = document.createElement('img')
+img3.style.cssText = 'width:600px; height:240px: display:block'
+img3.src = jpgMap
+document.body.appendChild(img3)

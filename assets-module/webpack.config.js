@@ -37,6 +37,15 @@ module.exports = {
         test:/\.txt$/,
         type:'asset/source'
       },
+      {
+        test:/\.jpg$/,
+        type:'asset',
+        parser:{
+          dataUrlCondition: {
+            maxSize: 2 *1024 *1024
+          }
+        }
+      },
     ]
   }
 }

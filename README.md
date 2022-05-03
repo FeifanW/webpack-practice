@@ -26,6 +26,8 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 
 - ##### resources资源   需要配置
 
+  生成的是一个资源路径，可以在代码中直接使用
+
 ```js
   module:{
     rules:[
@@ -66,22 +68,55 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 
   打包之后看不到，打开网页可以看到，导出一个资源的data-url
   
-  ```js
-    module:{
-      rules:[
-        {
-          test:/.\svg$/,
-          type:'asset/inline'
-        }
-      ]
-    }
-  ```
+  比如可以把svg转成base64字符串
+
+```
+  module:{
+    rules:[
+      {
+        test:/.\svg$/,
+        type:'asset/inline'
+      }
+    ]
+  }
+```
 
 - ##### source资源
 
-  导出资源的源代码
+​		导出资源的源信息，导出源代码
 
-  
+```js
+  module:{
+    rules:[
+      {
+        test:/\.txt$/,
+        type:'asset/source'
+      }
+    ]
+  }
+```
+
+- ##### 通用数据类型
+
+​		会自动选择resource还是inline，小于8kB的会转成base64字符串，大于的会创建一个资源。这个临界值可以自己更改
+
+```JS
+  module:{
+    rules:[
+      {
+        test:/\.jpg$/,
+        type:'asset',
+        parser:{
+          dataUrlCondition: {       // 更改临界值
+            maxSize: 2 *1024 *1024
+          }
+        }
+      },
+    ]
+  }
+```
+
+
 
 
 
