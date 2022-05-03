@@ -116,11 +116,26 @@ webpack dev server 会自动检测变化，重新刷新浏览器
   }
 ```
 
+> #### 三、loader
 
+​	webpack只能直接解析JS和JSON的文件，如果想要解析其他格式的文件需要用到loader
 
+​	npm i css-loader -D  安装css-loader
 
+​	npm i css-loader -D  安装style-loader
 
+​	npm i less-loader less -D  安装less-loader和less
 
+```js
+  module:{
+    rules:[
+      {
+        test:/\.(css|less)$/,
+        use:['style-loader', 'css-loader', 'less-loader']
+      }
+    ]
+  }
+```
 
 
 
