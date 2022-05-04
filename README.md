@@ -178,7 +178,28 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 
 - ##### 在CSS里加载资源
 
-  
+
+- ##### 加载字体资源
+
+```js
+  module:{
+    rules:[
+      {
+        test:/\.(css|less)$/,
+        use:['style-loader', 'css-loader', 'less-loader']
+      }
+    ]
+  }
+```
+
+在css中引入字体
+
+```
+@font-face {
+ font-family: 'iconfont';
+ src: url(./assets/iconfont.ttf) format('truetype');
+}
+```
 
 
 

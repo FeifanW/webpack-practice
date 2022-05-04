@@ -1,6 +1,14 @@
 /*!**********************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/less-loader/dist/cjs.js!./src/style.css ***!
   \**********************************************************************************************************/
+@font-face {
+  font-family: 'iconfont';
+  src: url(../images/65b194f1f711865371d1.ttf) format('truetype');
+}
+.icon {
+  font-family: 'iconfont';
+  font-size: 30px;
+}
 .hello {
   color: red;
 }
@@ -16,4 +24,4 @@ body {
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGVzL2UwN2M3NzhjMWUxN2U3NjI0ZGVjLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtFQUNFO0FBQ0Y7QUFFQTtFQUNFO0FBQUY7Ozs7O0FDSkE7RUFDRTtBQUFGIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL3N0eWxlLmNzcyIsIndlYnBhY2s6Ly8vLi9zcmMvc3R5bGUubGVzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIuaGVsbG8ge1xuICBjb2xvcjogcmVkO1xufVxuXG4uYmxvY2stYmcge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9hc3NldHMvbG9nby5zdmcpICFpbXBvcnRhbnQ7XG59IiwiQGNvbG9yOiAjZjllZmQ0O1xuYm9keSB7XG4gIGJhY2tncm91bmQtY29sb3I6IEBjb2xvclxufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGVzLzJjNzA3ZDhmYTc4MDI1OGI4NjE0LmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtFQUNFO0VBQ0E7QUFDRjtBQUVBO0VBQ0U7RUFDQTtBQUFGO0FBR0E7RUFDRTtBQURGO0FBSUE7RUFDRTtBQUZGOzs7OztBQ1pBO0VBQ0U7QUFBRiIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9zdHlsZS5jc3MiLCJ3ZWJwYWNrOi8vLy4vc3JjL3N0eWxlLmxlc3MiXSwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnaWNvbmZvbnQnO1xuICBzcmM6IHVybCguL2Fzc2V0cy9pY29uZm9udC50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcbn1cblxuLmljb24ge1xuICBmb250LWZhbWlseTogJ2ljb25mb250JztcbiAgZm9udC1zaXplOiAzMHB4O1xufVxuXG4uaGVsbG8ge1xuICBjb2xvcjogcmVkO1xufVxuXG4uYmxvY2stYmcge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9hc3NldHMvbG9nby5zdmcpICFpbXBvcnRhbnQ7XG59IiwiQGNvbG9yOiAjZjllZmQ0O1xuYm9keSB7XG4gIGJhY2tncm91bmQtY29sb3I6IEBjb2xvclxufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/
