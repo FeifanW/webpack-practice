@@ -194,7 +194,7 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 
 在css中引入字体
 
-```
+```css
 @font-face {
  font-family: 'iconfont';
  src: url(./assets/iconfont.ttf) format('truetype');

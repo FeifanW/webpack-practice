@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'iconfont';
-  src: url(./assets/iconfont.ttf) format('truetype');
+  src: url('./assets/iconfont.ttf') format('truetype');
 }
 
 .icon {
