@@ -5,6 +5,8 @@ import exampleTxt from './assets/example.txt'
 import jpgMap from './assets/zhihu.jpg'
 import './style.css'
 import './style.less'
+import Data from './assets/data.xml'
+import Notes from './assets/data.csv'
 
 
 helloWorld()
@@ -35,3 +37,6 @@ const span = document.createElement('span')
 span.classList.add('icon')
 span.innerHTML = '&#xe668;'
 document.body.appendChild(span)
+
+console.log(Data);
+console.log(Notes);

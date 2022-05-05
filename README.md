@@ -201,7 +201,23 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 }
 ```
 
+- ##### 加载数据
 
+​	以csv和xml为例
 
+​	npm i csv-loader xml-loader -D
 
+	  module:{
+	    rules:[
+	      {
+	        test:/\.(scv|tsv)$/,
+	        use:'csv-loader'
+	      },
+	      {
+	        test:/\.xml$/,
+	        use:'xml-loader'
+	      }
+	    ]
+	  }
+  
 
