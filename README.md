@@ -207,17 +207,49 @@ webpack dev server 会自动检测变化，重新刷新浏览器
 
 ​	npm i csv-loader xml-loader -D
 
-	  module:{
-	    rules:[
-	      {
-	        test:/\.(scv|tsv)$/,
-	        use:'csv-loader'
-	      },
-	      {
-	        test:/\.xml$/,
-	        use:'xml-loader'
-	      }
-	    ]
-	  }
-  
+```js
+  module:{
+    rules:[
+      {
+        test:/\.(scv|tsv)$/,
+        use:'csv-loader'
+      },
+      {
+        test:/\.xml$/,
+        use:'xml-loader'
+      }
+    ]
+  }
+```
+- #####  自定义JSON模块Parser
+
+​	以toml、yaml、json为例	
+
+​	npm i toml yaml json5 -D
+
+​	在module.rules里添加
+
+```js
+  {
+    test:/\.toml$/,
+    type:'json',
+    parser:{
+      parse:toml.parse
+    }
+  },
+  {
+    test:/\.yaml$/,
+    type:'json',
+    parser:{
+      parse:yaml.parse
+    }
+  },
+  {
+    test:/\.json5$/,
+    type:'json',
+    parser:{
+      parse:json5.parse
+    }
+  },
+```
 
