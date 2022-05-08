@@ -1,0 +1,27 @@
+/*!**********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/less-loader/dist/cjs.js!./src/style.css ***!
+  \**********************************************************************************************************/
+@font-face {
+  font-family: 'iconfont';
+  src: url(../images/65b194f1f711865371d1.ttf) format('truetype');
+}
+.icon {
+  font-family: 'iconfont';
+  font-size: 30px;
+}
+.hello {
+  color: red;
+}
+.block-bg {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yNC4wMDA1IDI4LjYyOTJDMjYuNTEwOSAyOC42MjkyIDI4LjU0NiAyNi42MDA1IDI4LjU0NiAyNC4wOTc5QzI4LjU0NiAyMS41OTU0IDI2LjUxMDkgMTkuNTY2NyAyNC4wMDA1IDE5LjU2NjdDMjEuNDkwMSAxOS41NjY3IDE5LjQ1NTEgMjEuNTk1NCAxOS40NTUxIDI0LjA5NzlDMTkuNDU1MSAyNi42MDA1IDIxLjQ5MDEgMjguNjI5MiAyNC4wMDA1IDI4LjYyOTJaIiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xNiAxNUMxMC42NjY3IDE5Ljk3MDYgMTAuNjY2NyAyOC4wMjk0IDE2IDMzIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDMzQzM3LjMzMzMgMjguMDI5NCAzNy4zMzMzIDE5Ljk3MDYgMzIgMTUiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTAgMTBDMiAxNy43MzIgMiAzMC4yNjggMTAgMzgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzguMTQyNiAzOC4xOTU5QzQ1Ljk1MzEgMzAuNDA5OCA0NS45NTMxIDE3Ljc4NjEgMzguMTQyNiAxMCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==) !important;
+}
+
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/less-loader/dist/cjs.js!./src/style.less ***!
+  \***********************************************************************************************************/
+body {
+  background-color: #f9efd4;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGVzL2IxOTc1ZWM1YzZkZDM2YWQxMmEzLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtFQUNFO0VBQ0E7QUFDRjtBQUVBO0VBQ0U7RUFDQTtBQUFGO0FBR0E7RUFDRTtBQURGO0FBSUE7RUFDRTtBQUZGOzs7OztBQ1pBO0VBQ0U7QUFBRiIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9zdHlsZS5jc3MiLCJ3ZWJwYWNrOi8vLy4vc3JjL3N0eWxlLmxlc3MiXSwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnaWNvbmZvbnQnO1xuICBzcmM6IHVybCgnLi9hc3NldHMvaWNvbmZvbnQudHRmJykgZm9ybWF0KCd0cnVldHlwZScpO1xufVxuXG4uaWNvbiB7XG4gIGZvbnQtZmFtaWx5OiAnaWNvbmZvbnQnO1xuICBmb250LXNpemU6IDMwcHg7XG59XG5cbi5oZWxsbyB7XG4gIGNvbG9yOiByZWQ7XG59XG5cbi5ibG9jay1iZyB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguL2Fzc2V0cy9sb2dvLnN2ZykgIWltcG9ydGFudDtcbn0iLCJAY29sb3I6ICNmOWVmZDQ7XG5ib2R5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogQGNvbG9yXG59Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9*/

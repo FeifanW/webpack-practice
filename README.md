@@ -253,3 +253,65 @@ webpack dev server 会自动检测变化，重新刷新浏览器
   },
 ```
 
+- ##### babel 
+
+​		`npm i babel-loader @babel/core @babel/preset-env -D`	
+
+​		babel-loader：在webpack里应用babel解析ES6的桥梁
+
+​		@babel/core：babel核心模块
+
+​		@babel/preset-env：babel预设，一组babel插件的集合
+
+​		regeneratorRuntime是webpack打包生成的全局辅助函数，由babel生成
+
+​		(例如async和await需要下面的支持)
+
+​		`npm install @babel/runtime -D`
+
+​		`npm install @babel/plugin-transform-runtime -D   // 这个可以在需要regeneratorRuntime的地方自动require导包`
+
+​		在module.rules里面写
+
+```js
+  {
+    test: /\.js$/,
+    exclude:/node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env'],
+        plugins: [
+          [
+            '@babel/plugin-transform-runtime'
+          ]
+        ]
+      }
+    }
+  }
+```
+
+​	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
